@@ -1,0 +1,9 @@
+{
+  "versions": [
+    {
+      "version": "latest",
+      "label": "Latest",
+      "class": "latest"
+    }
+  ]
+} 

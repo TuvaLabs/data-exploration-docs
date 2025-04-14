@@ -2,46 +2,52 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Data Exploration is a powerful JavaScript library for creating interactive data visualizations and exploration tools. Built by TuvaLabs, it provides a comprehensive set of components and utilities for building data-driven applications.
 
-## Getting Started
+## Features
 
-Get started by **creating a new site**.
+- **Interactive Visualizations**: Create dynamic charts, graphs, and data tables
+- **Responsive Design**: Components that adapt to different screen sizes
+- **Customizable**: Extensive theming and configuration options
+- **TypeScript Support**: Full type definitions for better development experience
+- **Modern Architecture**: Built with modern JavaScript practices
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Quick Start
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+1. Install the package:
 
 ```bash
-npm init docusaurus@latest my-website classic
+npm install @tuvalabs/data-exploration
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+2. Import and use components:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+```javascript
+import { DataExplorer, Chart } from '@tuvalabs/data-exploration';
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+function App() {
+  return (
+    <DataExplorer>
+      <Chart data={yourData} />
+    </DataExplorer>
+  );
+}
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Documentation Structure
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+- **[Getting Started](/docs/intro)**: Basic setup and usage
+- **[API Reference](/docs/api/intro)**: Detailed component and utility documentation
+- **[Examples](/docs/examples)**: Code samples and use cases
+- **[Configuration](/docs/api/intro#configuration)**: Library configuration options
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Contributing
+
+We welcome contributions! Please see our [GitHub repository](https://github.com/TuvaLabs/data-exploration) for more information.
+
+## Support
+
+- [GitHub Issues](https://github.com/TuvaLabs/data-exploration/issues)
+- [Documentation](https://tuvalabs.github.io/data-exploration-docs)

@@ -1,0 +1,27 @@
+# Documentation Linking Strategy
+
+- When adding internal markdown links, it's okay to link to documentation pages that haven't been created yet (e.g., `[Attribute](../Attribute.md)`).
+- These links act as placeholders and will generate Docusaurus warnings initially.
+- As the target documentation files (like `Attribute.md`) are created in the correct location, these links should resolve automatically.
+- Keep an eye on Docusaurus build warnings to track which documentation pages still need to be created to resolve all links.
+
+# Pending Documentation Tasks
+
+-   `FormulaInputComponent` (Sub-component of `NewAttributeComponent`)
+-   `SamplingDistributionsGuide.md` (User-focused guide for the sampling distribution feature, linking to `CaseSampler` and relevant UI components).
+-   *(We can add others here as they come up)*
+
+# Codebase Context Preference
+
+- The primary source code for implementation details is located at `/Users/jpatel/Development/data-exploration/`.
+- When verifying documentation against implementation, prioritize searching and referencing code within this directory.
+- Note: Actual context provided may vary based on IDE state and environment.
+
+# Documentation Version Context
+
+- All documentation should explicitly reference the version of the data-exploration codebase it pertains to.
+- Include version-specific details, such as:
+  - The specific commit hash or tag of the data-exploration repository.
+  - Any version-specific features, behaviors, or limitations.
+  - Changes or updates that might affect the documented functionality.
+- This ensures that users can match the documentation to the correct version of the codebase they are using.
